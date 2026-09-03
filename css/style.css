@@ -481,21 +481,22 @@ main button:hover{
 
 .section-header{
     width: 100%;
-    height: 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 1px solid #000;
     font-size: 18px;
     margin-bottom: 3%;
+    border-bottom: 1px solid #000;
 }
 
 .section-header .list{
+    height: 35px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     gap:20px;
+    /* background-color: #1b1f23; */
 }
 
 .section-header .list li{
@@ -510,12 +511,18 @@ main button:hover{
 
 .selected::after{
     content: "";
-    width: 100%;
+    /* width: 100%;
     height: 3px;
     background-color: #e83a76;
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: 0; */
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-bottom: 3px solid #e83a76;
 }
 
 .selected a{
@@ -688,6 +695,7 @@ main button:hover{
 
 .products .product-area .product .context{
     margin-top: 10px;
+    font-size: 17px;
 }
 
 .products .product-area .product:hover .product-name{
@@ -946,6 +954,7 @@ main button:hover{
 
 .may-like .product-area .product .context{
     margin-top: 10px;
+    font-size: 17.5px;
 }
 
 .may-like .product-area .product:hover .product-name{
@@ -990,17 +999,18 @@ main button:hover{
 .Latest-New .product-area .product img{
     width: 100%;
     height: 360px;
+    margin-bottom: 5px;
 
     transition: all 0.5s ease;
 }
 
 .Latest-New .product-area .product:hover img {
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 
 .Latest-New .product-area .product .context{
     margin-top: 15px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .Latest-New .product-area .product .context .product-name{
@@ -1013,6 +1023,7 @@ main button:hover{
 
 .Latest-New .product-area .product .context a{
     display: inline-block;
+    color: #631e9c;
     margin-top: 10px;
 
     transition: transform 0.4s ease;
