@@ -505,6 +505,7 @@ main button:hover{
 
 .section-header .list li a{
     text-decoration: none;
+    color: #631e9c;
 }
 
 .selected::after{
@@ -513,7 +514,7 @@ main button:hover{
     height: 3px;
     background-color: #e83a76;
     position: absolute;
-    bottom: -13px;
+    bottom: -10px;
     left: 0;
 }
 
